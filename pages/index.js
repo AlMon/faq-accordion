@@ -18,34 +18,45 @@ export default function Home() {
       </Head>
 
       <main className='flex min-h-screen items-center justify-center'>
-        <div className='bg-white w-[900px] h-[500px] rounded-3xl grid grid-cols-2 relative shadow-2xl mx-20'>
+        <div className='bg-white w-[900px] h-[500px] rounded-3xl grid grid-cols-1 lg:grid-cols-2 relative shadow-2xl mx-10'>
           <img
             src='/illustration-box-desktop.svg'
             alt='Box illustration desktop'
-            className='absolute -ml-24 mt-[12.5rem] z-20'
+            className='absolute -ml-24 mt-[12.5rem] z-20 hidden lg:block'
           />
-          <div className='flex items-center relative overflow-hidden z-0'>
+          <div className='lg:flex items-center relative overflow-hidden z-0 hidden'>
             <img
               src='/illustration-woman-online-desktop.svg'
               alt='Desktop woman illustration'
-              className='-ml-14 overflow-hidden z-10'
+              className='-ml-14 overflow-hidden z-10 hidden lg:block'
             />
             <img
               src='/bg-pattern-desktop.svg'
               alt=''
-              className='absolute bottom-10 -left-40 transform scale-150 h-full'
+              className='absolute bottom-10 -left-40 transform scale-150 h-full hidden lg:block'
             />
           </div>
-          <div className='px-14'>
-            <h1 className='text-[32.5px] font-bold mt-14 mb-5'>FAQ</h1>
-
+          <div className='lg:px-14 px-5'>
+            <img
+              src='/illustration-woman-online-mobile.svg'
+              alt='Mobile woman illustration'
+              className='mt-[-6.25rem] ml-[-20px] z-20 lg:hidden'
+            />
+            <img
+              src='/bg-pattern-mobile.svg'
+              alt='Mobile woman illustration'
+              className='absolute mt-[-6rem] mx-auto z-10 lg:hidden'
+            />
+            <h1 className='text-[32.5px] font-bold lg:mt-14 mt-4 mb-2 lg:mb-5 text-center'>
+              FAQ
+            </h1>
             {faqData.map(({ question, answer }, index) => (
               <Disclosure key={index}>
                 {({ open }) => (
                   <>
                     <Disclosure.Button className='w-full flex pt-4 pb-3 border-b-[1px] border-[#e7e7e9] justify-between'>
                       <p
-                        className={`text-[#4a4b5e] hover:text-[#f47c57] ${
+                        className={`text-[#4a4b5e] hover:text-[#f47c57] lg:text-[14px] text-[12px] ${
                           open
                             ? 'font-bold text-[#1d1e35] hover:text-[#1d1e35]'
                             : ''
