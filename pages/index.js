@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
 
       <main className='flex min-h-screen items-center justify-center'>
-        <div className='bg-white w-[900px] h-[500px] rounded-3xl grid grid-cols-1 lg:grid-cols-2 relative shadow-2xl mx-10'>
+        <div className='bg-white w-[900px] h-[500px] rounded-3xl grid grid-cols-1 lg:grid-cols-2 relative shadow-2xl mx-5'>
           <img
             src='/illustration-box-desktop.svg'
             alt='Box illustration desktop'
@@ -58,7 +58,7 @@ export default function Home() {
                 {({ open }) => (
                   <>
                     <Disclosure.Button className='w-full flex pt-4 pb-3 border-b-[1px] border-[#e7e7e9] justify-between'>
-                      <p
+                      <span
                         className={`text-[#4a4b5e] hover:text-[#f47c57] lg:text-[14px] text-[12px] ${
                           open
                             ? 'font-bold text-[#1d1e35] hover:text-[#1d1e35]'
@@ -66,7 +66,7 @@ export default function Home() {
                         }`}
                       >
                         {question}
-                      </p>
+                      </span>
                       <ChevronDownIcon
                         className={`h-5 w-5 text-[#f47c57] ${
                           open ? 'transform rotate-180' : ''
