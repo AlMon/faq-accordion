@@ -44,7 +44,7 @@ export default function Home() {
             />
             <img
               src='/bg-pattern-mobile.svg'
-              alt='Mobile woman illustration'
+              alt='Mobile pattern illustration'
               className='mt-[-6rem] mx-auto z-10 lg:hidden'
             />
             <h1 className='text-[32.5px] font-bold lg:mt-14 mt-4 mb-2 lg:mb-5 hidden lg:block'>
