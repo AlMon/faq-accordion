@@ -40,14 +40,17 @@ export default function Home() {
             <img
               src='/illustration-woman-online-mobile.svg'
               alt='Mobile woman illustration'
-              className='mt-[-6.25rem] ml-[-20px] z-20 lg:hidden'
+              className='mt-[-6.25rem] mx-auto z-20 lg:hidden'
             />
             <img
               src='/bg-pattern-mobile.svg'
               alt='Mobile woman illustration'
-              className='absolute mt-[-6rem] mx-auto z-10 lg:hidden'
+              className='mt-[-6rem] mx-auto z-10 lg:hidden'
             />
-            <h1 className='text-[32.5px] font-bold lg:mt-14 mt-4 mb-2 lg:mb-5 text-center'>
+            <h1 className='text-[32.5px] font-bold lg:mt-14 mt-4 mb-2 lg:mb-5 hidden lg:block'>
+              FAQ
+            </h1>
+            <h1 className='text-[32.5px] font-bold lg:mt-14 mt-4 mb-2 lg:mb-5 text-center lg:hidden'>
               FAQ
             </h1>
             {faqData.map(({ question, answer }, index) => (
